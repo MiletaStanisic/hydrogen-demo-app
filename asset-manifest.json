@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/hydrogen-react.github.io/static/css/main.03998cd9.chunk.css",
+    "main.js": "/hydrogen-react.github.io/static/js/main.3daab87f.chunk.js",
+    "main.js.map": "/hydrogen-react.github.io/static/js/main.3daab87f.chunk.js.map",
+    "runtime-main.js": "/hydrogen-react.github.io/static/js/runtime-main.a9ebf28b.js",
+    "runtime-main.js.map": "/hydrogen-react.github.io/static/js/runtime-main.a9ebf28b.js.map",
+    "static/js/2.6c40e89b.chunk.js": "/hydrogen-react.github.io/static/js/2.6c40e89b.chunk.js",
+    "static/js/2.6c40e89b.chunk.js.map": "/hydrogen-react.github.io/static/js/2.6c40e89b.chunk.js.map",
+    "index.html": "/hydrogen-react.github.io/index.html",
+    "precache-manifest.740c1c486b636948e0523dbb22865581.js": "/hydrogen-react.github.io/precache-manifest.740c1c486b636948e0523dbb22865581.js",
+    "service-worker.js": "/hydrogen-react.github.io/service-worker.js",
+    "static/css/main.03998cd9.chunk.css.map": "/hydrogen-react.github.io/static/css/main.03998cd9.chunk.css.map",
+    "static/js/2.6c40e89b.chunk.js.LICENSE.txt": "/hydrogen-react.github.io/static/js/2.6c40e89b.chunk.js.LICENSE.txt",
+    "static/media/avatar1.png": "/hydrogen-react.github.io/static/media/avatar1.60299587.png",
+    "static/media/element.min.css": "/hydrogen-react.github.io/static/media/element.f93ed6c3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9ebf28b.js",
+    "static/js/2.6c40e89b.chunk.js",
+    "static/css/main.03998cd9.chunk.css",
+    "static/js/main.3daab87f.chunk.js"
+  ]
+}
