@@ -1,0 +1,15 @@
+$spinkit-spinner-margin: 40px auto !default;
+$spinkit-size: 30px !default;
+$spinkit-spinner-color: #ccc !default;
+
+@import "../../node_modules/spinkit/spinkit.css";
+
+.sk-wave {
+  width: 40px;
+  white-space: nowrap;
+}
+
+.sk-fading-circle .sk-circle {
+  margin-top: 0;
+  margin-bottom: 0;
+}

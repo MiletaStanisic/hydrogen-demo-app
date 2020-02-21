@@ -1,0 +1,106 @@
+
+
+.goal-icon{
+  font-size: 3rem;
+  // margin-left: 11rem;
+  vertical-align: middle;
+}
+
+.goal-card{
+  display: inline-block;
+  min-height: 5rem;
+  // padding-left: 5rem;
+  border-color: white;
+  cursor: pointer;
+  padding: 1.4rem 6rem 1rem 9rem;
+  margin: 0 0.8rem;
+}
+
+.questionnaire{
+  padding: 1rem 2rem 1rem 4rem;
+}
+
+.add-account-select{
+  width: 13rem;
+}
+
+.fadeOut{
+  opacity:0;
+  width:0;
+  height:0;
+  transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+
+}
+.fadeIn{
+  opacity:1;
+  width:100px;
+  height:100px;
+  transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+
+}
+
+.main-card{
+  box-shadow: 2px 3px 11px 1px #858383;
+  margin-top: 5rem;
+}
+
+.selected{
+  border-color: #26B4FF;
+  color: #26B4FF;
+  border-width: 0.1rem;
+}
+
+.goal-card:hover {
+  color: #26B4FF;
+  border-color: #26B4FF;
+  border-width: 0.1rem;
+}
+
+.questionnaire-back{
+  margin-right: auto !important;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.questionnaire-next{
+  font-size: 1.5rem;
+  color: #26B4FF;
+  font-weight: bolder;
+}
+
+.stepzilla-done-icon{
+  border-color: #26B4FF !important;
+  color: #26B4FF;
+  font-size: 2.3rem !important;
+}
+
+.disable-click{
+  pointer-events:none
+}
+
+.questionnaire-btn{
+  cursor: pointer;
+}
+.progress-barji{
+  display: hide;
+}
+
+.lead{
+  line-height: 2.5;
+}
+
+.text-big{
+  font-size: 170% !important;
+}
+
+// .multi-stem{
+//   position: absolute;
+//   top: 6rem;
+//   z-index: 999;
+// }
+
+.checker label {
+  &:before{
+    border: 1px solid black !important;
+  }
+}

@@ -1,0 +1,167 @@
+// @import '..styles/_custom-variables/_libs.scss';
+
+$stepzilla-icon-size: 2.5rem !default;
+$stepzilla-icon-border-width: 2px !default;
+$stepzilla-icon-font-size: 1rem !default;
+$stepzilla-spacer: 2rem !default;
+
+.react-stepzilla {
+  width: 100%;
+
+  > .multi-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 100%;
+
+  }
+
+  > .multi-step > .footer-buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 1rem;
+
+    button {
+      margin-left: .25rem;
+
+      [dir=rtl] & {
+        margin-left: 0;
+        margin-right: .25rem;
+      }
+    }
+  }
+}
+
+ol.progtrckr {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: row;
+  justify-content: stretch;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0;
+
+  em {
+    display: none;
+  }
+
+  li {
+    flex-grow: 1;
+    opacity: .4;
+    position: relative;
+    cursor: default;
+    margin-bottom: 1rem;
+    padding-right: $stepzilla-spacer;
+
+    [dir=rtl] & {
+      padding-right: 0;
+      padding-left: $stepzilla-spacer;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    > span {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    > span > span {
+      position: relative;
+      display: block;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 0 0 ($stepzilla-icon-size + 1.25rem);
+      min-height: $stepzilla-icon-size;
+      outline: 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      text-decoration: none;
+      font-weight: 500;
+      cursor: default;
+
+      [dir=rtl] & {
+        padding-right: ($stepzilla-icon-size + 1.25rem);
+        padding-left: 0;
+      }
+    }
+  }
+
+  .stepzilla-title,
+  .stepzilla-desctiption {
+    display: block;
+  }
+
+  .stepzilla-desctiption {
+    font-weight: normal;
+  }
+
+  .stepzilla-number,
+  .stepzilla-icon,
+  .stepzilla-done-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -$stepzilla-icon-size / 2;
+    width: $stepzilla-icon-size;
+    height: $stepzilla-icon-size;
+    border: $stepzilla-icon-border-width solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: calc(#{$stepzilla-icon-size} - #{($stepzilla-icon-border-width * 2)});
+
+    [dir=rtl] & {
+      right: 0;
+      left: auto;
+    }
+  }
+
+  .stepzilla-icon,
+  .stepzilla-done-icon {
+    font-size: $stepzilla-icon-font-size;
+  }
+
+  .stepzilla-done-icon {
+    display: none;
+  }
+
+  .stepzilla-number {
+    font-weight: 500;
+  }
+}
+
+ol.progtrckr .progtrckr-doing,
+ol.progtrckr .progtrckr-done {
+  opacity: 1;
+}
+
+ol.progtrckr .progtrckr-done {
+  cursor: pointer;
+
+  .stepzilla-number,
+  .stepzilla-icon,
+  .stepzilla-done-icon {
+    opacity: .4;
+  }
+
+  .stepzilla-done-icon {
+    display: block;
+
+    ~ .stepzilla-icon,
+    ~ .stepzilla-number {
+      display: none;
+    }
+  }
+}
+

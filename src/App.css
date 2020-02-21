@@ -1,0 +1,247 @@
+#root {
+height: 100vh;
+}
+
+.initPageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.spinner-container, .erorr-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jsonInitializeButtton {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.initPageContainer .jsonCard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+}
+.requestsStateItems {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.requestsStateItems .btnGoToLogin {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.jsonCard {
+  margin-bottom: 20px;
+}
+.jsonCard span {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.stepzilla-done-icon{
+  border-color: #26B4FF !important;
+  color: #26B4FF;
+  font-size: 2.3rem !important;
+}
+.initPageContainer .multi-step {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.initPageContainer .multi-step ol{
+
+  align-items: space-around;
+  margin-left: 60px;
+}
+
+.stepzilla-icon.icon-profile-group {
+  font-size: 30px !important;
+}
+.stepzilla-icon.icon-download {
+  font-size: 20px !important;
+}
+.stepzilla-icon.icon-settings {
+  font-size: 20px !important;
+}
+
+.navbar-container .navbar-icon {
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+.navbar-container .dropdown-menu.show li {
+  font-size: 16px !important;
+  margin-left: 4px;
+}
+
+.chart-card-dashboard {
+  float: right;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.client-card-dashboard .client-table-dashboard {
+  margin-top: 30px;
+  position: absolute;
+  margin-left: 37%;
+}
+.client-table-dashboard div {
+    height: 3rem;
+  }
+.goal-card-dashboard {
+ float: left;
+ padding: 20px;
+ width: 40%;
+ min-height: 300px;
+}
+
+.goal-card-dashboard .goal-cards-text {
+  font-size: 120%;
+}
+
+.info-card-dashboard {
+  width: 100%;
+  margin-top: 5rem !important;
+
+}
+.client-card-dashboard .client-table-dashboard .lhXUSr{
+  margin: 0 20px 0 0 !important;
+}
+.allocation-decsription {
+  margin-top: 10px;
+}
+
+.model-holdings-table{
+  margin-top: 5rem;
+}
+
+.allocation-info-card{
+  width: 40%;
+}
+
+.account-info-cards{
+  height: 6.5rem;
+}
+.account-info-cards:hover {
+  color: #26B4FF;
+}
+.client-chart {
+  height: 18.8rem;
+}
+.client-table-dashboard .gwXnnd {
+  margin-top: 0.5rem !important;
+} 
+
+.account-card-dashboard {
+  width: 100%;
+  margin-top: 30px;
+  min-height: 400px;
+}
+
+.account-card-dashboard .sc-iAyFgw {
+  height: 160px !important;
+  float: right;
+  margin-top: 80px;
+  position: absolute;
+  margin-left: 75%;
+}
+
+.dashboard-chart{
+  height: 13rem;
+}
+
+.dashbord-chart-card{
+  height: 25rem;
+}
+
+.dashboard-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.invalid-login-input {
+  border-color: red;
+}
+
+.button-buy-stocks-dashboard {
+  float: right;
+  background-color: #0D96A6;
+}
+.selected-account-dashboard {
+  float: left;
+  margin-top: 2px;
+}
+
+.page-header-dashboard {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 100%;
+}
+.chart-page-card-dashboard {
+  float: right;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.client-page-dashboard .client-page-table-dashboard{
+  float: right;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 10%;
+  position: absolute;
+  margin-left: 35%;
+}
+.client-page-dashboard .client-page-table-dashboard .lhXUSr{
+  margin: 0 20px 0 0 !important;
+}
+
+.add-account-form-check .custom-control-label {
+  cursor: pointer;
+}
+
+#item-delete-all{
+  color: red;
+}
+
+div h4, div span, span, table tr td {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.client-table-responsive {
+  float: right;
+  margin-left: 70%;
+  position: absolute;
+}
+.client-table-responsive td {
+  padding: 20px 20px;
+}
+.client-page-dashboard .legend {
+  padding: 0 20px !important;
+}
+
+.slider1-account-div {
+  margin-top: 15px;
+}
+.slider2-account-div {
+  margin-top: 25px;
+}
+
+.account-info-cards {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.customize-goal-card {
+  min-width: 500px !important;
+}
+
+.account-card-no-resize {
+  min-width: 560px !important;
+}
+
