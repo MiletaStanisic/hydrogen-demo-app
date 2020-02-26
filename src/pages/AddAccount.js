@@ -236,32 +236,40 @@ class AddAccount extends Component {
       modelHoldings,
       onCreatePortifolioAssetSize,
       onCreatePortifolioTransaction,
-      clientAssetSize
+      clientAssetSize,
+      accounts
     } = this.props;
 
     const { buyStocksAmount, allocation } = this.state;
-    const dates = [
-      "2019-02-01",
-      "2019-03-01",
-      "2019-04-01",
-      "2019-05-01",
-      "2019-06-01",
-      "2019-07-01",
-      "2019-08-01",
-      "2019-09-01",
-      "2019-10-01",
-      "2019-11-01",
-      "2019-12-01",
-      "2020-01-01"
-    ];
-
+    const dates1 = ["2019-02-01", "2019-03-01", "2019-04-01", "2019-05-01", "2019-06-01", "2019-07-01", "2019-08-01", "2019-09-01", "2019-10-01", "2019-11-01", "2019-12-01"];
+    const dates2 = ["2020-02-01", "2020-03-01", "2020-04-01", "2020-05-01", "2020-06-01", "2020-07-01", "2020-08-01", "2020-09-01", "2020-10-01", "2020-11-01", "2020-12-01"];
+    const dates3 = ["2021-02-01", "2021-03-01", "2021-04-01", "2021-05-01", "2021-06-01", "2021-07-01", "2021-08-01", "2021-09-01", "2021-10-01", "2021-11-01", "2021-12-01"];
+    const dates4 = ["2022-02-01", "2022-03-01", "2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-01", "2022-11-01", "2022-12-01"];
+    let dates;
+    let date;
+    if (accounts.length === 1) {
+      dates = dates1
+      date = "2019-01-01"
+    };
+    if (accounts.length === 2) {
+      dates = dates2
+      date = "2020-01-01"
+    };
+    if (accounts.length === 3) {
+      dates = dates3
+      date = "2021-01-01"
+    };
+    if (accounts.length === 4){
+      dates = dates4
+      date = "2022-01-01"
+    };
     for (const mh of modelHoldings) {
       const amount = buyStocksAmount * (mh.current_weight / 100);
 
       const payload = {
         amount: amount,
         shares: amount / 10,
-        date: "2019-01-01",
+        date: date,
         weight: mh.current_weight,
         security_id: mh.security_id,
         portfolio_id: accountPortifolio.id
@@ -286,7 +294,7 @@ class AddAccount extends Component {
       assetSize: buyStocksAmount,
       cashFlow: buyStocksAmount,
       portfolioId: accountPortifolio.id,
-      date: "2019-01-01"
+      date: date
     });
 
     let assetsGrowth = clientAssetSize.slice(-1)[0].value + buyStocksAmount;
@@ -508,6 +516,7 @@ const mapStateToProps = state => ({
   accountPortifolio: state.accounts.accountPortifolio,
   transactionCodes: state.funding.transactionCodes,
   account: state.accounts.account,
+  accounts: state.accounts.accounts,
   accountPortifolioHoldings: state.accounts.accountPortifolioHoldings,
   clientAssetSize: state.user.clientAssetSize,
   modelHoldings: state.models.modelHoldings,

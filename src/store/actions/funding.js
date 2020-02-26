@@ -157,7 +157,7 @@ export const getTransactionCodesStart = () => {
 }
 
 export const getTransactionCodes = payload => (dispatch, getState) => {
-  const { accessToken } = getState().user;
+  const accessToken = localStorage.getItem('accessToken');
   dispatch(getTransactionCodesStart())
   axios({
     method: 'GET',
@@ -193,7 +193,7 @@ export const createPortifolioTransactionStart = () => {
 }
 
 export const createPortifolioTransaction = payload => (dispatch, getState) => {
-  const { accessToken } = getState().user;
+  const accessToken = localStorage.getItem('accessToken');
   const { quantity, price, portfolioId, securityId, transactionCode, accountId, modelId } = payload
   dispatch(createPortifolioTransactionStart())
   axios({

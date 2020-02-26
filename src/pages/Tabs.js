@@ -18,6 +18,7 @@ import "nouislider/distribute/nouislider.css";
 
 export const Account = ({ goal, account, curInventorySlider, monthlyDepositSlider, currentAccountInventory, runGoalProjection, goalProjection, allocation, monthlyFunding, modelHoldings, securities }) => {
   const colors = ['#28A6F8', '#1856FA', '#327fa8', '#133080', '#335fd6']
+  console.log('modelHoldings and securities', modelHoldings, securities);
   const data = (modelHoldings && modelHoldings.length > 0 && securities.length > 0) ? modelHoldings.map((mh, index) => {
     const security = securities.find(s => s.id === mh.security_id);
     let securityType;

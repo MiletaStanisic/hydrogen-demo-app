@@ -120,7 +120,7 @@ class Dashboard extends Component {
     if (accountAllocation !== prevProps.accountAllocation) {
       onGetAllocation(accountAllocation.allocation_id);
     }
-
+    console.log('accountPortifolio', accountPortifolio);
     if (accountPortifolio !== prevProps.accountPortifolio && accountPortifolio && accountPortifolio.model_id) {
       onGetModelHoldings(accountPortifolio.model_id);
     }

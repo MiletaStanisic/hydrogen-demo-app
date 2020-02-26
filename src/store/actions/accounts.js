@@ -191,7 +191,7 @@ export const subscribeAccountStart = () => {
 }
 
 export const subscribeAccountt = payload => (dispatch, getState) => {
-  const { accessToken } = getState().user;
+  const accessToken = localStorage.getItem('accessToken');
   const { allocationId, goalId, accountId, monthlyDeposit } = payload;
   dispatch(subscribeAccountStart())
   axios({
@@ -283,7 +283,7 @@ export const getAccountPortifolioStart = () => {
 }
 
 export const getAccountPortifolio = payload => (dispatch, getState) => {
-  const { accessToken } = getState().user;
+  const accessToken = localStorage.getItem('accessToken');
   const { accountId } = payload;
   dispatch(getAccountPortifolioStart())
   axios({
