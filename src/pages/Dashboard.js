@@ -213,7 +213,7 @@ class Dashboard extends Component {
   buyShares = () => {
     const { modelHoldings, portfolio, clientAssetSize, onGetAccountPortifolioHoldings, account, onCreatePortfolioHolding, transactionCodes, onCreatePortifolioTransaction, accountPortifolio, onCreatePortifolioAssetSize } = this.props;
     let { price } = this.state;
-    const currentBalance = clientAssetSize.slice(-1)[0].value
+    const currentBalance = clientAssetSize.length ? clientAssetSize.slice(-1)[0].value : 0;
     const usableDates = this.cutUsableDates();
     for (const mh of modelHoldings) {
       const amount = price * (mh.current_weight / 100);
