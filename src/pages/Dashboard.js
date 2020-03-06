@@ -138,7 +138,6 @@ class Dashboard extends Component {
       onGetUser,
       onGetAllSecurities
     } = this.props;
-    console.log(">>>>", localStorage.getItem("accessToken"))
     onClearSubscription();
 
     if (account && account.id) {
