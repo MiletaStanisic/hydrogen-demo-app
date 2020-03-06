@@ -206,7 +206,8 @@ export const subscribeAccountt = payload => (dispatch, getState) => {
       strategic_weight: 100,
       allocation_id: allocationId,
       goal_id: goalId,
-      date: "2019-01-01"
+      date: "2019-01-01",
+      account_id: accountId
     }
   })
     .then(res => {

@@ -297,7 +297,7 @@ class AddAccount extends Component {
       date: date
     });
 
-    let assetsGrowth = clientAssetSize.slice(-1)[0].value + buyStocksAmount;
+    let assetsGrowth = clientAssetSize.length>0 ? (clientAssetSize.slice(-1)[0].value + buyStocksAmount) : buyStocksAmount;
     for (const d of dates) {
       if (allocation.name === "Aggressive Allocation")
         assetsGrowth = (assetsGrowth * (1 + 0.13 / 12) * getRandomInt(1,11));

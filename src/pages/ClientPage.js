@@ -46,7 +46,7 @@ class ClientPage extends Component {
       onGetClientCumulativeReturn(user.id)
       onGetClientAnnualVolume(user.id)
     }
-    if (clientAssetSize !== prevProps.clientAssetSize) {
+    if (clientAssetSize.length !== prevProps.clientAssetSize.length) {
       this.setState({ currentBalance: clientAssetSize.slice(-1)[0].value });
     }
   }

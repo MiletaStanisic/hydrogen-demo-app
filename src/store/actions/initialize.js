@@ -324,7 +324,8 @@ export const subscribeAccount = (payload) => async (dispatch, getState) => {
       strategic_weight: strategic_weight,
       date: date,
       allocation_id: allocation_id,
-      goal_id: goal_id
+      goal_id: goal_id,
+      account_id: account_id
     }
   })
   dispatch({
